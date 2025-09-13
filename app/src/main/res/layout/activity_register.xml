@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:gravity="center_horizontal">
+
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginTop="40dp"
+            android:src="@drawable/rigister"
+            android:contentDescription="Logo" />
+
+        <EditText
+            android:layout_width="236dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/rounded"
+            android:hint="Enter your name"
+            android:inputType="textEmailAddress"
+            android:maxLines="1"
+            android:paddingStart="15dp"
+            android:textColor="#5D17D9"
+            android:textSize="16sp" />
+
+        <EditText
+            android:layout_width="236dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/rounded"
+            android:hint="Enter your email"
+            android:inputType="textPassword"
+            android:maxLines="1"
+            android:paddingStart="15dp"
+            android:textColor="#290862"
+            android:textSize="16sp" />
+
+        <EditText
+            android:layout_width="236dp"
+            android:layout_height="50dp"
+            android:hint="Enter your password"
+            android:textSize="16sp"
+            android:paddingStart="15dp"
+            android:textColor="#5D17D9"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/rounded"
+            android:inputType="textPersonName"
+            android:maxLines="1" />
+
+        <EditText
+            android:layout_width="236dp"
+            android:layout_height="50dp"
+            android:hint="Enter your otp"
+            android:textSize="16sp"
+            android:paddingStart="15dp"
+
+            android:textColor="#5D17D9"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/rounded"
+            android:inputType="phone"
+            android:maxLines="1" />
+
+        <Button
+            android:id="@+id/asdfff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:paddingHorizontal="40dp"
+            android:text="REGISTER"
+
+            android:backgroundTint="#1E2021"
+            android:textColor="#FFFFFF" />
+
+    </LinearLayout>
+</ScrollView>

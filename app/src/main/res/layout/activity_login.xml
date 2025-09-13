@@ -1,0 +1,66 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:id="@+id/main"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:orientation="vertical"
+>
+
+<ImageView
+    android:layout_width="300dp"
+    android:layout_height="300dp"
+    android:background="@drawable/abc"
+    android:layout_marginLeft="50dp"
+    android:layout_marginTop="75dp"/>
+
+
+
+<EditText
+    android:layout_width="236dp"
+    android:layout_height="50dp"
+    android:layout_marginLeft="85dp"
+    android:background="@drawable/rounded"
+    android:hint="Enter your mobile no."
+    android:inputType="textEmailAddress"
+    android:maxLines="1"
+    android:paddingStart="15dp"
+    android:textColor="#5D17D9"
+    android:textSize="16sp" />
+
+<EditText
+    android:layout_width="236dp"
+    android:layout_height="50dp"
+    android:layout_marginTop="20dp"
+    android:layout_marginLeft="85dp"
+    android:background="@drawable/rounded"
+    android:hint="Enter your otp"
+    android:inputType="textEmailAddress"
+    android:maxLines="1"
+    android:paddingStart="15dp"
+    android:textColor="#5D17D9"
+    android:textSize="16sp" />
+
+<Button
+    android:id="@+id/asdff"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="25dp"
+    android:paddingHorizontal="40dp"
+    android:layout_marginLeft="140dp"
+    android:text="LOGIN"
+    android:backgroundTint="#0A0A0B"
+    android:textColor="#FFFFFF" />
+
+<Button
+    android:id="@+id/asdfff"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingHorizontal="40dp"
+    android:layout_marginLeft="130dp"
+    android:text="REGISTER"
+    android:backgroundTint="#181A1B"
+    android:textColor="#FFFFFF" />
+
+
+</LinearLayout>
