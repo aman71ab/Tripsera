@@ -22,7 +22,7 @@ class Login : AppCompatActivity() {
             insets
         }
 
-        // ✅ Correct IDs (ye aapke XML ke hisaab se hone chahiye)
+        // ✅ Correct IDs (XML ke according)
         val etMobile = findViewById<EditText>(R.id.no)
         val etOtp = findViewById<EditText>(R.id.otp)
         val btnLogin = findViewById<Button>(R.id.login)       // LOGIN button
@@ -50,7 +50,7 @@ class Login : AppCompatActivity() {
 
         // REGISTER button click ✅
         btnRegister.setOnClickListener {
-            val intent = Intent(this@Login, register::class.java)
+            val intent = Intent(this@Login, Register::class.java) // 🔥 Corrected
             startActivity(intent)
         }
     }

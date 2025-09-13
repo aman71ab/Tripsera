@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="24dp">
+
+    <!-- Title -->
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="LET’S"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="EXPLORE"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        android:textColor="#182EC5"
+        android:layout_marginTop="4dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="THE WORLD"
+        android:textSize="20sp"
+        android:textColor="@android:color/black"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Description -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Faucibus faucibus tortor."
+        android:textAlignment="center"
+        android:textColor="@android:color/darker_gray"
+        android:layout_marginBottom="32dp"/>
+
+    <!-- Enter Button -->
+    <Button
+        android:id="@+id/btnEnter"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="ENTER"
+        android:backgroundTint="#1B31C7"
+        android:textColor="@android:color/white"
+        android:padding="12dp"
+        android:background="@drawable/rounded"
+        android:layout_marginRight="100dp"
+
+        android:textAllCaps="true"/>
+
+    <!-- Illustration -->
+    <ImageView
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:src="@drawable/asdf"
+        android:layout_marginTop="32dp"
+        android:contentDescription="Travel Image" />
+
+</LinearLayout>

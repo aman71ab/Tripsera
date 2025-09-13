@@ -20,6 +20,7 @@
             android:contentDescription="Logo" />
 
         <EditText
+            android:id="@+id/name"
             android:layout_width="236dp"
             android:layout_height="50dp"
             android:layout_marginTop="20dp"
@@ -32,6 +33,7 @@
             android:textSize="16sp" />
 
         <EditText
+            android:id="@+id/Email"
             android:layout_width="236dp"
             android:layout_height="50dp"
             android:layout_marginTop="15dp"
@@ -44,6 +46,7 @@
             android:textSize="16sp" />
 
         <EditText
+            android:id="@+id/Password"
             android:layout_width="236dp"
             android:layout_height="50dp"
             android:hint="Enter your password"
@@ -56,6 +59,7 @@
             android:maxLines="1" />
 
         <EditText
+            android:id="@+id/Otpp"
             android:layout_width="236dp"
             android:layout_height="50dp"
             android:hint="Enter your otp"
@@ -68,13 +72,23 @@
             android:maxLines="1" />
 
         <Button
-            android:id="@+id/asdfff"
+            android:id="@+id/btnRegister"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="25dp"
             android:paddingHorizontal="40dp"
             android:text="REGISTER"
             android:backgroundTint="#1E2021"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/btnBackToLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:paddingHorizontal="40dp"
+            android:text="Back to Login"
+            android:backgroundTint="#5D17D9"
             android:textColor="#FFFFFF" />
 
     </LinearLayout>
