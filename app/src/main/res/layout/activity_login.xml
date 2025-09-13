@@ -10,7 +10,7 @@ android:orientation="vertical"
 <ImageView
     android:layout_width="300dp"
     android:layout_height="300dp"
-    android:background="@drawable/abc"
+    android:background="@drawable/zz"
     android:layout_marginLeft="50dp"
     android:layout_marginTop="75dp"/>
 
