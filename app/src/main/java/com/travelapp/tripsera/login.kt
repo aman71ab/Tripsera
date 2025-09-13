@@ -3,12 +3,14 @@ package com.travelapp.tripsera
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
+import android.widget.EditText
+import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 
-class login : AppCompatActivity() {
+class Login : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
@@ -20,17 +22,35 @@ class login : AppCompatActivity() {
             insets
         }
 
-        // Register jane wala button
-        val btnGoRegister = findViewById<Button>(R.id.asdff)
-        btnGoRegister.setOnClickListener {
-            val intent = Intent(this@login, register::class.java)
-            startActivity(intent)
+        // ✅ Correct IDs (ye aapke XML ke hisaab se hone chahiye)
+        val etMobile = findViewById<EditText>(R.id.no)
+        val etOtp = findViewById<EditText>(R.id.otp)
+        val btnLogin = findViewById<Button>(R.id.login)       // LOGIN button
+        val btnRegister = findViewById<Button>(R.id.register) // REGISTER button
+
+        // LOGIN button click
+        btnLogin.setOnClickListener {
+            val mobile = etMobile.text.toString().trim()
+            val otp = etOtp.text.toString().trim()
+
+            when {
+                mobile.isEmpty() -> {
+                    Toast.makeText(this, "Please enter Mobile Number", Toast.LENGTH_SHORT).show()
+                }
+                otp.isEmpty() -> {
+                    Toast.makeText(this, "Please enter OTP", Toast.LENGTH_SHORT).show()
+                }
+                else -> {
+                    Toast.makeText(this, "Login Successful", Toast.LENGTH_SHORT).show()
+                    val intent = Intent(this@Login, MainActivity::class.java)
+                    startActivity(intent)
+                }
+            }
         }
 
-        // Agar register ke baad wapas aaye ho to yaha se MainActivity jao
-        val btnLoginNext = findViewById<Button>(R.id.asdfff)
-        btnLoginNext.setOnClickListener {
-            val intent = Intent(this@login, MainActivity::class.java)
+        // REGISTER button click ✅
+        btnRegister.setOnClickListener {
+            val intent = Intent(this@Login, register::class.java)
             startActivity(intent)
         }
     }

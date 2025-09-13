@@ -23,7 +23,7 @@ class register : AppCompatActivity() {
         // Register ke baad login screen par wapas
         val btnBackToLogin = findViewById<Button>(R.id.asdfff)
         btnBackToLogin.setOnClickListener {
-            val intent = Intent(this@register, login::class.java)
+            val intent = Intent(this@register,btnBackToLogin::class.java)
             startActivity(intent)
         }
     }

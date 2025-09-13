@@ -1,66 +1,65 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-xmlns:app="http://schemas.android.com/apk/res-auto"
-xmlns:tools="http://schemas.android.com/tools"
-android:id="@+id/main"
-android:layout_width="match_parent"
-android:layout_height="match_parent"
-android:orientation="vertical"
->
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:padding="20dp"
+    tools:context=".Login">
 
-<ImageView
-    android:layout_width="300dp"
-    android:layout_height="300dp"
-    android:background="@drawable/zz"
-    android:layout_marginLeft="50dp"
-    android:layout_marginTop="75dp"/>
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/zz"
+        android:contentDescription="Logo"
+        android:layout_marginTop="40dp" />
 
+    <EditText
+        android:id="@+id/no"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/rounded"
+        android:hint="Enter your mobile no."
+        android:inputType="phone"
+        android:maxLines="1"
+        android:paddingStart="15dp"
+        android:textColor="#5D17D9"
+        android:textSize="16sp" />
 
+    <EditText
+        android:id="@+id/otp"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/rounded"
+        android:hint="Enter your OTP"
+        android:inputType="number"
+        android:maxLines="1"
+        android:paddingStart="15dp"
+        android:textColor="#5D17D9"
+        android:textSize="16sp" />
 
-<EditText
-    android:layout_width="236dp"
-    android:layout_height="50dp"
-    android:layout_marginLeft="85dp"
-    android:background="@drawable/rounded"
-    android:hint="Enter your mobile no."
-    android:inputType="textEmailAddress"
-    android:maxLines="1"
-    android:paddingStart="15dp"
-    android:textColor="#5D17D9"
-    android:textSize="16sp" />
+    <Button
+        android:id="@+id/login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:paddingHorizontal="40dp"
+        android:text="LOGIN"
+        android:backgroundTint="#0A0A0B"
+        android:textColor="#FFFFFF" />
 
-<EditText
-    android:layout_width="236dp"
-    android:layout_height="50dp"
-    android:layout_marginTop="20dp"
-    android:layout_marginLeft="85dp"
-    android:background="@drawable/rounded"
-    android:hint="Enter your otp"
-    android:inputType="textEmailAddress"
-    android:maxLines="1"
-    android:paddingStart="15dp"
-    android:textColor="#5D17D9"
-    android:textSize="16sp" />
-
-<Button
-    android:id="@+id/asdff"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:layout_marginTop="25dp"
-    android:paddingHorizontal="40dp"
-    android:layout_marginLeft="140dp"
-    android:text="LOGIN"
-    android:backgroundTint="#0A0A0B"
-    android:textColor="#FFFFFF" />
-
-<Button
-    android:id="@+id/asdfff"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:paddingHorizontal="40dp"
-    android:layout_marginLeft="130dp"
-    android:text="REGISTER"
-    android:backgroundTint="#181A1B"
-    android:textColor="#FFFFFF" />
-
+    <Button
+        android:id="@+id/register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:paddingHorizontal="40dp"
+        android:text="REGISTER"
+        android:backgroundTint="#181A1B"
+        android:textColor="#FFFFFF" />
 
 </LinearLayout>
