@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fillViewport="true">
@@ -24,7 +25,7 @@
             android:layout_marginTop="20dp"
             android:background="@drawable/rounded"
             android:hint="Enter your name"
-            android:inputType="textEmailAddress"
+            android:inputType="textPersonName"
             android:maxLines="1"
             android:paddingStart="15dp"
             android:textColor="#5D17D9"
@@ -36,7 +37,7 @@
             android:layout_marginTop="15dp"
             android:background="@drawable/rounded"
             android:hint="Enter your email"
-            android:inputType="textPassword"
+            android:inputType="textEmailAddress"
             android:maxLines="1"
             android:paddingStart="15dp"
             android:textColor="#290862"
@@ -51,7 +52,7 @@
             android:textColor="#5D17D9"
             android:layout_marginTop="15dp"
             android:background="@drawable/rounded"
-            android:inputType="textPersonName"
+            android:inputType="textPassword"
             android:maxLines="1" />
 
         <EditText
@@ -60,11 +61,10 @@
             android:hint="Enter your otp"
             android:textSize="16sp"
             android:paddingStart="15dp"
-
             android:textColor="#5D17D9"
             android:layout_marginTop="15dp"
             android:background="@drawable/rounded"
-            android:inputType="phone"
+            android:inputType="number"
             android:maxLines="1" />
 
         <Button
@@ -74,7 +74,6 @@
             android:layout_marginTop="25dp"
             android:paddingHorizontal="40dp"
             android:text="REGISTER"
-
             android:backgroundTint="#1E2021"
             android:textColor="#FFFFFF" />
 
